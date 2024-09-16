@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake counter</title>
+    <link rel="stylesheet" href="opdracht 4 CSS.css">
+</head>
+<body>
+    <div class="container-left">
+        <button class="button"><span>Hover </span></button>
+
+    </div>
+    <div class="container-mid">
+        <img src="cake.png" alt="Cake clicker" id="clickableImage" />
+        <p>Cakes: <span id="Cake Count">0</span></p>
+
+    
+    <script>
+    let count = 0;
+    
+    const clickableImage = document.getElementById('clickableImage'); // Get the image
+    const clickCount = document.getElementById('Cake Count'); // Get the span to display the count
+    
+    // Add click event listener to the image
+    clickableImage.addEventListener('click', () => {
+        count++; // Increment the count
+        clickCount.textContent = count; // Update the displayed count
+    });
+    </script>
+    </div>
+    <div class="container-right">
+
+    </div>
+</body>
+</html>
+ 
